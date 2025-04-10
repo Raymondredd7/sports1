@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+  }
+
+  body {
+    @apply bg-gray-50;
+    color: rgb(var(--foreground-rgb));
+  }
+}
+
+@layer components {
+  .prediction-card {
+    @apply bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow;
+  }
+
+  .team-logo {
+    @apply w-8 h-8 md:w-12 md:h-12 object-contain;
+  }
+
+  .match-card {
+    @apply bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow;
+  }
+
+  .prediction-label {
+    @apply font-medium text-gray-700;
+  }
+
+  .prediction-value {
+    @apply text-gray-900;
+  }
+
+  .loading-spinner {
+    @apply animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500;
+  }
+
+  .error-message {
+    @apply text-red-500 text-center;
+  }
+} 
