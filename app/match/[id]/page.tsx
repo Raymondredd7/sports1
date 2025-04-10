@@ -25,9 +25,8 @@ export default function MatchPage() {
           const predictionData = await generatePrediction(matchData);
           setPrediction(predictionData);
         }
-      } catch (error) {
-        console.error('Error fetching match details:', error);
-        setError('Failed to load match details. Please try again later.');
+      } catch (err) {
+        setError('Failed to fetch match details');
       } finally {
         setLoading(false);
       }

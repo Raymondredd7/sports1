@@ -17,7 +17,7 @@ export default function Contact() {
     setStatus('submitting');
     
     // Here you would typically send the form data to your backend
-    // For now, we&apos;ll simulate a successful submission
+    // For now, we'll simulate a successful submission
     setTimeout(() => {
       setStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
@@ -35,7 +35,7 @@ export default function Contact() {
         <div className="text-center mb-12">
           <h1 className="text-3xl font-bold text-gray-900">Contact Us</h1>
           <p className="mt-4 text-lg text-gray-600">
-            Have questions or feedback? We&apos;d love to hear from you.
+            Have questions or feedback? We'd love to hear from you.
           </p>
         </div>
 
@@ -113,7 +113,7 @@ export default function Contact() {
 
             {status === 'success' && (
               <div className="text-green-600 text-center">
-                Thank you for your message! We&apos;ll get back to you soon.
+                Thank you for your message! We'll get back to you soon.
               </div>
             )}
 

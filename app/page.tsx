@@ -6,8 +6,8 @@ import { getMatchPrediction } from '../services/predictionService';
 import { Match, Prediction } from '../types';
 import Image from 'next/image';
 import Link from 'next/link';
+import LeagueFlag from './components/LeagueFlag';
 import CustomSelect from './components/CustomSelect';
-import { LEAGUES } from './constants/leagues';
 
 interface MatchWithPrediction extends Match {
   prediction?: Prediction;

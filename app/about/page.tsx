@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function About() {
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
@@ -16,7 +18,7 @@ export default function About() {
             <div>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Our Mission</h2>
               <p className="text-gray-600 mb-6">
-                We&apos;re dedicated to providing football fans with accurate, data-driven predictions using advanced AI technology. Our goal is to enhance your football experience by offering insights and analysis that help you better understand upcoming matches.
+                We're dedicated to providing football fans with accurate, data-driven predictions using advanced AI technology. Our goal is to enhance your football experience by offering insights and analysis that help you better understand upcoming matches.
               </p>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">How It Works</h2>
               <p className="text-gray-600 mb-6">
